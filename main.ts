@@ -27,7 +27,7 @@ app.get("/", (c) => c.text("Welcome to Hono!"));
 
 // Implement the git clone operation as an example of using isomorphic-git with the adapted fs and HTTP client
 app.get('/clone-repo', async (c) => {
-  const dir = './git';
+  const dir = './cloned-repos';
   const url = 'https://github.com/isomorphic-git/isomorphic-git'; // Example repository URL
 
   try {
